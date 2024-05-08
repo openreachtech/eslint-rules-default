@@ -11,6 +11,11 @@
   ],
   "author": "Open Reach Tech inc.",
   "license": "UNLICENSED",
+  "dependencies": {
+    "eslint-plugin-jest": "^28.5.0",
+    "eslint-plugin-jsdoc": "^48.2.3",
+    "eslint-plugin-openreachtech": "^1.0.1"
+  },
   "devDependencies": {
     "eslint": "^9.2.0"
   }
