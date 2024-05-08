@@ -1,0 +1,14 @@
+{
+  "name": "@openreachtech/eslint-rules-default",
+  "version": "0.0.0",
+  "description": "A showcasing package all the rules of ESLint.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ESLint"
+  ],
+  "author": "Open Reach Tech inc.",
+  "license": "UNLICENSED"
+}
