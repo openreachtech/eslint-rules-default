@@ -10,5 +10,8 @@
     "ESLint"
   ],
   "author": "Open Reach Tech inc.",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "eslint": "^9.2.0"
+  }
 }
