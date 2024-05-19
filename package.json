@@ -1,0 +1,24 @@
+{
+  "name": "@openreachtech/eslint-rules-default",
+  "version": "0.0.0",
+  "description": "A showcasing package all the rules of ESLint.",
+  "main": "index.js",
+  "scripts": {
+    "l": "npm run lint",
+    "lint": "eslint .",
+    "test": "jest --forceExit --maxWorkers=5"
+  },
+  "keywords": [
+    "ESLint"
+  ],
+  "author": "Open Reach Tech inc.",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "eslint": "^9.2.0",
+    "eslint-plugin-jest": "^28.5.0",
+    "eslint-plugin-jsdoc": "^48.2.3",
+    "eslint-plugin-openreachtech": "^1.0.1",
+    "jest": "^29.7.0"
+  }
+}
