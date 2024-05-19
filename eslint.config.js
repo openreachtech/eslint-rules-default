@@ -1,15 +1,13 @@
-'use strict'
-
-const jestPlugin = require('eslint-plugin-jest')
-const jsdocPlugin = require('eslint-plugin-jsdoc')
-const openreachtechPlugin = require('eslint-plugin-openreachtech')
+import jestPlugin from 'eslint-plugin-jest'
+import jsdocPlugin from 'eslint-plugin-jsdoc'
+import openreachtechPlugin from 'eslint-plugin-openreachtech'
 
 /**
  * ESLint Config
  *
  * @type {Array<import('eslint').Linter.FlatConfig>}
  */
-module.exports = [
+export default [
   {
     languageOptions: {
       globals: {
@@ -18,7 +16,7 @@ module.exports = [
       parserOptions: {
         ecmaVersion: 'latest',
       },
-      sourceType: 'commonjs',
+      sourceType: 'module',
     },
   },
 
