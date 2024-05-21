@@ -475,9 +475,9 @@ export default {
       'error',
     ],
     'no-octal-escape': [
-      {
-        'error  no-plusplus': null,
-      },
+      'error',
+    ],
+    'no-plusplus': [
       'error',
       {
         allowForLoopAfterthoughts: false,
