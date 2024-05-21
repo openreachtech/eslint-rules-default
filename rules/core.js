@@ -128,6 +128,16 @@ export default {
     'id-denylist': [
       'error',
     ],
+    'id-length': [
+      'error',
+      {
+        min: 2,
+        max: Infinity,
+        properties: 'always',
+        exceptions: [],
+        exceptionPatterns: [],
+      },
+    ],
     'id-match': [
       'error',
       '^.+$',
