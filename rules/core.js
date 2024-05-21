@@ -448,6 +448,16 @@ export default {
     'no-loss-of-precision': [
       'error',
     ],
+    'no-magic-numbers': [
+      'error',
+      {
+        detectObjects: false,
+        enforceConst: false,
+        ignore: [],
+        ignoreArrayIndexes: false,
+        ignoreDefaultValues: false,
+      },
+    ],
     'no-misleading-character-class': [
       'error',
     ],
