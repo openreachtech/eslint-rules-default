@@ -35,6 +35,15 @@ export default {
         allow: [],
       },
     ],
+    'capitalized-comments': [
+      'error',
+      'always',
+      {
+        ignoreInlineComments: false,
+        ignoreConsecutiveComments: false,
+        ignorePattern: '',
+      },
+    ],
     'class-methods-use-this': [
       'error',
       {
