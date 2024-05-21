@@ -549,6 +549,11 @@ export default {
         },
       },
     ],
+    'no-restricted-globals': [
+      'error',
+      // There are 0 or more rest parameters in the array
+      // string | { name: string, message: string }
+    ],
     'no-return-assign': [
       'error',
       'except-parens',
