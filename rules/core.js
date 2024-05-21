@@ -83,6 +83,13 @@ export default {
     'default-param-last': [
       'error',
     ],
+    'dot-notation': [
+      'error',
+      {
+        allowKeywords: true,
+        allowPattern: '',
+      },
+    ],
     eqeqeq: [
       'error',
       'always',
