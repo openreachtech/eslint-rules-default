@@ -413,6 +413,16 @@ export default {
         capIsConstructor: true,
       },
     ],
+    'no-irregular-whitespace': [
+      'error',
+      {
+        skipComments: false,
+        skipJSXText: false,
+        skipRegExps: false,
+        skipStrings: true,
+        skipTemplates: false,
+      },
+    ],
     'no-iterator': [
       'error',
     ],
