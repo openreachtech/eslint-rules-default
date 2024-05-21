@@ -535,6 +535,20 @@ export default {
     'no-regex-spaces': [
       'error',
     ],
+    'no-restricted-exports': [
+      'error',
+      {
+        restrictedNamedExports: [],
+        restrictedNamePattern: '',
+        restrictDefaultExports: {
+          direct: false,
+          named: false,
+          defaultFrom: false,
+          namedFrom: false,
+          namespaceFrom: false,
+        },
+      },
+    ],
     'no-return-assign': [
       'error',
       'except-parens',
