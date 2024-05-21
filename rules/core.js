@@ -391,6 +391,12 @@ export default {
     'no-import-assign': [
       'error',
     ],
+    'no-inline-comments': [
+      'error',
+      {
+        ignorePattern: '',
+      },
+    ],
     'no-inner-declarations': [
       'error',
       'functions',
