@@ -353,6 +353,13 @@ export default {
     'no-extra-label': [
       'error',
     ],
+    'no-fallthrough': [
+      'error',
+      {
+        allowEmptyCase: true,
+        commentPattern: '',
+      },
+    ],
     'no-func-assign': [
       'error',
     ],
