@@ -783,6 +783,16 @@ export default {
         decoration: [],
       },
     ],
+    'object-shorthand': [
+      'error',
+      'always',
+      {
+        avoidQuotes: false,
+        ignoreConstructors: false,
+        avoidExplicitReturnArrows: false,
+        methodsIgnorePattern: '',
+      },
+    ],
     'openreachtech/empty-line-after-super': [
       'error',
     ],
