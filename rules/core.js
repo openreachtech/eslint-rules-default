@@ -771,6 +771,18 @@ export default {
       'error',
       'always',
     ],
+    'no-warning-comments': [
+      'error',
+      {
+        terms: [
+          'todo',
+          'fixme',
+          'xxx',
+        ],
+        location: 'start',
+        decoration: [],
+      },
+    ],
     'openreachtech/empty-line-after-super': [
       'error',
     ],
