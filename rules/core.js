@@ -698,6 +698,19 @@ export default {
     'no-unused-private-class-members': [
       'error',
     ],
+    'no-unused-vars': [
+      'error',
+      {
+        vars: 'all',
+        varsIgnorePattern: '',
+        args: 'after-used',
+        argsIgnorePattern: '',
+        caughtErrors: 'none',
+        caughtErrorsIgnorePattern: '',
+        ignoreRestSiblings: false,
+        destructuredArrayIgnorePattern: '',
+      },
+    ],
     'no-use-before-define': [
       'error',
       {
