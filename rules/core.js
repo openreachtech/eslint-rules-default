@@ -539,7 +539,7 @@ export default {
       'error',
       {
         restrictedNamedExports: [],
-        restrictedNamePattern: '',
+        restrictedNamedExportsPattern: '',
         restrictDefaultExports: {
           direct: false,
           named: false,
