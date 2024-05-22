@@ -503,6 +503,14 @@ export default {
     'no-octal-escape': [
       'error',
     ],
+    'no-param-reassign': [
+      'error',
+      {
+        props: false,
+        ignorePropertyModificationsFor: [],
+        ignorePropertyModificationsForRegex: [],
+      },
+    ],
     'no-plusplus': [
       'error',
       {
