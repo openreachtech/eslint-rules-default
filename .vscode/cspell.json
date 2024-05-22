@@ -2,6 +2,16 @@
   "words": [
     "jsdoc",
     "openreach",
-    "openreachtech"
+    "openreachtech",
+
+    "backreference",
+    "camelcase",
+    "eqeqeq",
+    "iife",
+    "iifes",
+    "nonoctal",
+    "oneline",
+    "parens",
+    "plusplus"
   ]
 }
