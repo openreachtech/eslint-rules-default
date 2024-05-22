@@ -564,6 +564,11 @@ export default {
       // There are 0 or more rest parameters in the array
       // { object?: string, property: string, message?: string }
     ],
+    'no-restricted-syntax': [
+      'error',
+      // There are 0 or more rest parameters in the array
+      // string | { selector: string, message: string }
+    ],
     'no-return-assign': [
       'error',
       'except-parens',
