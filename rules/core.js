@@ -793,21 +793,6 @@ export default {
         methodsIgnorePattern: '',
       },
     ],
-    'openreachtech/empty-line-after-super': [
-      'error',
-    ],
-    'openreachtech/indent-in-infix-expression': [
-      'error',
-    ],
-    'openreachtech/newline-per-parameter': [
-      'error',
-    ],
-    'openreachtech/no-if-in-oneline': [
-      'error',
-    ],
-    'openreachtech/no-unexpected-multiline': [
-      'error',
-    ],
     'operator-assignment': [
       'error',
       'always',
