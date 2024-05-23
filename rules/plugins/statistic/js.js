@@ -240,6 +240,21 @@ export default {
         onlyOneSimpleParam: false,
       },
     ],
+    '@stylistic/no-extra-parens': [
+      'error',
+      'all',
+      {
+        conditionalAssign: false,
+        returnAssign: false,
+        nestedBinaryExpressions: false,
+        ignoreJSX: 'none',
+        enforceForArrowConditionals: false,
+        enforceForSequenceExpressions: false,
+        enforceForNewInMemberExpressions: false,
+        enforceForFunctionPrototypeMethods: false,
+        allowParensAfterCommentPattern: '',
+      },
+    ],
     '@stylistic/no-extra-semi': [
       'error',
     ],
