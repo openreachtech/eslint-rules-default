@@ -480,6 +480,36 @@ export default {
         overrides: {},
       },
     ],
+    '@stylistic/spaced-comment': [
+      'error',
+      'always',
+      {
+        line: {
+          exceptions: [
+            '/',
+            '-',
+            '=',
+            '+',
+          ],
+          markers: [
+            '*',
+          ],
+        },
+        block: {
+          exceptions: [
+            '*',
+          ],
+          markers: [
+            '*',
+          ],
+          balanced: true,
+        },
+        markers: [
+          '*',
+        ],
+        exceptions: [],
+      },
+    ],
     '@stylistic/switch-colon-spacing': [
       'error',
       {
