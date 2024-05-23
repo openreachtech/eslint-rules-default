@@ -163,6 +163,14 @@ export default {
         after: true,
       },
     ],
+    '@stylistic/line-comment-position': [
+      'error',
+      {
+        position: 'above',
+        applyDefaultIgnorePatterns: true,
+        ignorePattern: '',
+      },
+    ],
     '@stylistic/linebreak-style': [
       'error',
       'unix',
