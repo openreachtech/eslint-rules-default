@@ -9,5 +9,8 @@ export default {
       'error',
       2,
     ],
+    '@stylistic/type-generic-spacing': [
+      'error',
+    ],
   },
 }
