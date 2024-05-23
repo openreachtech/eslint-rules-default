@@ -144,6 +144,10 @@ export default {
         ignoreComments: false,
       },
     ],
+    '@stylistic/jsx-quotes': [
+      'error',
+      'prefer-double',
+    ],
     '@stylistic/key-spacing': [
       'error',
       {
