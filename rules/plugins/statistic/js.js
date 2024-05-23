@@ -390,6 +390,13 @@ export default {
       'error',
       'initializations',
     ],
+    '@stylistic/operator-linebreak': [
+      'error',
+      'after',
+      {
+        overrides: {},
+      },
+    ],
     '@stylistic/padded-blocks': [
       'error',
       'always',
