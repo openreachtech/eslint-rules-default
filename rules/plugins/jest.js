@@ -66,6 +66,17 @@ export default {
     'jest/no-focused-tests': [
       'error',
     ],
+    'jest/no-hooks': [
+      'error',
+      {
+        allow: [
+          'beforeAll',
+          'beforeEach',
+          'afterAll',
+          'afterEach',
+        ],
+      },
+    ],
     'jest/no-identical-title': [
       'error',
     ],
