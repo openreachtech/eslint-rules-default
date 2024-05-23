@@ -5,5 +5,9 @@ export default {
     '@stylistic': stylistic,
   },
   rules: {
+    '@stylistic/indent-binary-ops': [
+      'error',
+      2,
+    ],
   },
 }
