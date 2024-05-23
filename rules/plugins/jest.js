@@ -209,5 +209,22 @@ export default {
         maxArgs: 1,
       },
     ],
+    'jest/valid-title': [
+      'error',
+      {
+        ignoreTypeOfDescribeName: false,
+        disallowedWords: [],
+        mustMatch: {
+          describe: [],
+          it: [],
+          test: [],
+        },
+        mustNotMatch: {
+          describe: [],
+          it: [],
+          test: [],
+        },
+      },
+    ],
   },
 }
