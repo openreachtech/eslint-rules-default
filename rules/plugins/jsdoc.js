@@ -142,6 +142,16 @@ export default {
         ],
       },
     ],
+    'jsdoc/match-description': [
+      'error',
+      {
+        mainDescription: true,
+        matchDescription: '^\\n?([A-Z`\\d_][\\s\\S]*[.?!`]\\s*)?$',
+        message: 'JSDoc description does not satisfy the regex pattern.',
+        nonemptyTags: true,
+        tags: {},
+      },
+    ],
     'jsdoc/match-name': [
       'error',
       {
