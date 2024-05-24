@@ -367,6 +367,16 @@ export default {
         setDefaultDestructuredRootDescription: false,
       },
     ],
+    'jsdoc/require-param-name': [
+      'error',
+      {
+        contexts: [
+          'ArrowFunctionExpression',
+          'FunctionDeclaration',
+          'FunctionExpression',
+        ],
+      },
+    ],
     'jsdoc/require-param-type': [
       'error',
       {
