@@ -58,6 +58,18 @@ export default {
         wrapIndent: '',
       },
     ],
+    'jsdoc/check-param-names': [
+      'error',
+      {
+        allowExtraTrailingParamDocs: false,
+        checkDestructured: true,
+        checkRestProperty: false,
+        checkTypesPattern: '/^(?:[oO]bject|[aA]rray|PlainObject|Generic(?:Object|Array))$/',
+        enableFixer: false,
+        disableExtraPropertyReporting: false,
+        useDefaultObjectProperties: false,
+      },
+    ],
     'jsdoc/check-property-names': [
       'error',
       {
