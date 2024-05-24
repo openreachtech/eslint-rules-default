@@ -431,6 +431,16 @@ export default {
         ],
       },
     ],
+    'jsdoc/require-returns-type': [
+      'error',
+      {
+        contexts: [
+          'ArrowFunctionExpression',
+          'FunctionDeclaration',
+          'FunctionExpression',
+        ],
+      },
+    ],
     'jsdoc/require-yields-check': [
       'error',
       {
