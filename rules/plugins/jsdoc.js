@@ -199,6 +199,17 @@ export default {
         enableFixer: false,
       },
     ],
+    'jsdoc/no-defaults': [
+      'error',
+      {
+        noOptionalParamNames: false,
+        contexts: [
+          'ArrowFunctionExpression',
+          'FunctionDeclaration',
+          'FunctionExpression',
+        ],
+      },
+    ],
     'jsdoc/no-missing-syntax': [
       'error',
       {
