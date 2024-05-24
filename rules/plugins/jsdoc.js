@@ -666,6 +666,14 @@ export default {
         tags: {},
       },
     ],
+    'jsdoc/text-escaping': [
+      'error',
+      // Must include either `escapeHTML` or `escapeMarkdown` (or both).
+      {
+        escapeHTML: false,
+        escapeMarkdown: false,
+      },
+    ],
     'jsdoc/valid-types': [
       'error',
       {
