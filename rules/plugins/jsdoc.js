@@ -454,6 +454,23 @@ export default {
         ],
       },
     ],
+    'jsdoc/require-yields': [
+      'error',
+      {
+        exemptedBy: [
+          'inheritdoc',
+        ],
+        forceRequireYields: false,
+        contexts: [
+          'FunctionDeclaration',
+          'FunctionExpression',
+        ],
+        withGeneratorTag: true,
+        next: false,
+        forceRequireNext: false,
+        nextWithGeneratorTag: false,
+      },
+    ],
     'jsdoc/require-yields-check': [
       'error',
       {
