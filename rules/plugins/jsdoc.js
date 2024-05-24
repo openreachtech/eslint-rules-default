@@ -313,6 +313,36 @@ export default {
         tags: {},
       },
     ],
+    'jsdoc/require-jsdoc': [
+      'error',
+      {
+        checkConstructors: true,
+        checkGetters: true,
+        checkSetters: true,
+        contexts: [
+          'ArrowFunctionExpression',
+          'ClassDeclaration',
+          'ClassExpression',
+          'FunctionDeclaration',
+          'FunctionExpression',
+          'MethodDefinition',
+        ],
+        enableFixer: true,
+        exemptEmptyConstructors: true,
+        exemptEmptyFunctions: false,
+        fixerMessage: '',
+        minLineCount: 'undefined',
+        publicOnly: false,
+        require: {
+          ArrowFunctionExpression: false,
+          ClassDeclaration: false,
+          ClassExpression: false,
+          FunctionDeclaration: true,
+          FunctionExpression: false,
+          MethodDefinition: false,
+        },
+      },
+    ],
     'jsdoc/require-param': [
       'error',
       {
