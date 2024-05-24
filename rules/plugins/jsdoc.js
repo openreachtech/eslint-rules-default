@@ -233,7 +233,11 @@ export default {
     'jsdoc/no-types': [
       'error',
       {
-        contexts: [],
+        contexts: [
+          'ArrowFunctionExpression',
+          'FunctionDeclaration',
+          'FunctionExpression',
+        ],
       },
     ],
     'jsdoc/no-undefined-types': [
