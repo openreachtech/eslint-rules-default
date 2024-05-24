@@ -276,6 +276,24 @@ export default {
         tags: [],
       },
     ],
+    'jsdoc/require-example': [
+      'error',
+      {
+        checkConstructors: true,
+        checkGetters: false,
+        checkSetters: false,
+        contexts: [
+          'ArrowFunctionExpression',
+          'FunctionDeclaration',
+          'FunctionExpression',
+        ],
+        enableFixer: true,
+        exemptedBy: [
+          'inheritdoc',
+        ],
+        exemptNoArguments: false,
+      },
+    ],
     'jsdoc/require-file-overview': [
       'error',
       {
