@@ -111,6 +111,16 @@ export default {
         tags: [],
       },
     ],
+    'jsdoc/implements-on-classes': [
+      'error',
+      {
+        contexts: [
+          'ArrowFunctionExpression',
+          'FunctionDeclaration',
+          'FunctionExpression',
+        ],
+      },
+    ],
     'jsdoc/imports-as-dependencies': [
       'error',
     ],
