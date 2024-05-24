@@ -1,5 +1,11 @@
+import js from '@eslint/js'
+
 export default {
   rules: {
+    ...js.configs
+      .all
+      .rules,
+
     'accessor-pairs': [
       'error',
       {
