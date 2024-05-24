@@ -421,6 +421,16 @@ export default {
         reportMissingReturnForUndefinedTypes: false,
       },
     ],
+    'jsdoc/require-returns-description': [
+      'error',
+      {
+        contexts: [
+          'ArrowFunctionExpression',
+          'FunctionDeclaration',
+          'FunctionExpression',
+        ],
+      },
+    ],
     'jsdoc/require-yields-check': [
       'error',
       {
