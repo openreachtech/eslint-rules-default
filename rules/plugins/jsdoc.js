@@ -396,6 +396,23 @@ export default {
     'jsdoc/require-property-type': [
       'error',
     ],
+    'jsdoc/require-returns': [
+      'error',
+      {
+        checkConstructors: false,
+        checkGetters: true,
+        exemptedBy: [
+          'inheritdoc',
+        ],
+        forceRequireReturn: false,
+        forceReturnsWithAsync: false,
+        contexts: [
+          'ArrowFunctionExpression',
+          'FunctionDeclaration',
+          'FunctionExpression',
+        ],
+      },
+    ],
     'jsdoc/require-returns-check': [
       'error',
       {
