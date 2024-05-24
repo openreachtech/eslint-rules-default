@@ -441,6 +441,19 @@ export default {
         ],
       },
     ],
+    'jsdoc/require-throws': [
+      'error',
+      {
+        exemptedBy: [
+          'inheritdoc',
+        ],
+        contexts: [
+          'ArrowFunctionExpression',
+          'FunctionDeclaration',
+          'FunctionExpression',
+        ],
+      },
+    ],
     'jsdoc/require-yields-check': [
       'error',
       {
