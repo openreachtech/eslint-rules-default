@@ -251,6 +251,23 @@ export default {
         tags: {},
       },
     ],
+    'jsdoc/require-description': [
+      'error',
+      {
+        checkConstructors: true,
+        checkGetters: true,
+        checkSetters: true,
+        contexts: [
+          'ArrowFunctionExpression',
+          'FunctionDeclaration',
+          'FunctionExpression',
+        ],
+        descriptionStyle: 'body',
+        exemptedBy: [
+          'inheritdoc',
+        ],
+      },
+    ],
     'jsdoc/require-description-complete-sentence': [
       'error',
       {
