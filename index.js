@@ -1,9 +1,9 @@
-import core from './rules/core'
-import disableCoreStylistic from './rules/disable-core-stylistic'
-import stylisticJs from './rules/plugins/stylistic/js'
-import stylisticPlus from './rules/plugins/stylistic/plus'
-import jestPlugin from './rules/plugins/jest'
-import jsdocPlugin from './rules/plugins/jsdoc'
+import core from './rules/core.js'
+import disableCoreStylistic from './rules/disable-core-stylistic.js'
+import stylisticJs from './rules/plugins/stylistic/js.js'
+import stylisticPlus from './rules/plugins/stylistic/plus.js'
+import jestPlugin from './rules/plugins/jest.js'
+import jsdocPlugin from './rules/plugins/jsdoc.js'
 
 export default {
   core,

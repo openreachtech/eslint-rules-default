@@ -1,5 +1,3 @@
-import jestPlugin from 'eslint-plugin-jest'
-import jsdocPlugin from 'eslint-plugin-jsdoc'
 import openreachtechPlugin from 'eslint-plugin-openreachtech'
 
 import ruleHash from './index.js'
@@ -1560,7 +1558,7 @@ export default [
     },
   },
   {
-    ...jestPlugin.configs['flat/recommended'],
+    ...ruleHash.jest,
 
     rules: {
       ...ruleHash.jest.rules,
@@ -1772,8 +1770,9 @@ export default [
   },
   {
     plugins: {
-      jsdoc: jsdocPlugin,
+      ...ruleHash.jsdoc.plugins,
     },
+
     rules: {
       ...ruleHash.jsdoc.rules,
 
