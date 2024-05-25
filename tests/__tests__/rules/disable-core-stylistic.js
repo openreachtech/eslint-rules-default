@@ -1,7 +1,7 @@
 import disableCoreStylistic from '../../../rules/disable-core-stylistic'
 import stylisticJs from '../../../rules/plugins/stylistic/js'
 
-describe('disable-core-stylistic', () => {
+describe('disable-core-stylistic rules', () => {
   const cases = [
     {
       args: {
