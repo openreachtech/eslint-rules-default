@@ -6,12 +6,30 @@
 
     "backreference",
     "camelcase",
+    "defaultvalue",
     "eqeqeq",
+    "fileoverview",
+    "hashbang",
     "iife",
     "iifes",
+    "linebreak",
+    "namepaths",
+    "nocheck",
+    "nonblock",
     "nonoctal",
+    "nonwords",
     "oneline",
     "parens",
-    "plusplus"
+    "plusplus",
+    "wizaction",
+
+    "noalias",
+    "nocollapse",
+    "nocompile",
+    "noinline",
+    "nosideeffects",
+
+    "bject",
+    "rray"
   ]
 }
