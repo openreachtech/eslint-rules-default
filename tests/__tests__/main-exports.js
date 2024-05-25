@@ -7,7 +7,7 @@ import jsdocPlugin from '../../rules/plugins/jsdoc'
 
 import mainExports from '../../index'
 
-describe('eslintConfig', () => {
+describe('main exports', () => {
   describe('to have property', () => {
     const cases = [
       {
