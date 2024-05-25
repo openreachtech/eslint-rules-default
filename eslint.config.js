@@ -1,6 +1,6 @@
-import jestPlugin from 'eslint-plugin-jest'
-import jsdocPlugin from 'eslint-plugin-jsdoc'
 import openreachtechPlugin from 'eslint-plugin-openreachtech'
+
+import ruleHash from './index.js'
 
 /**
  * ESLint Config
@@ -33,6 +33,9 @@ export default [
 
   {
     rules: {
+      ...ruleHash.core.rules,
+      ...ruleHash.disableCoreStylistic.rules,
+
       indent: [
         'error',
         2,
@@ -1555,10 +1558,10 @@ export default [
     },
   },
   {
-    ...jestPlugin.configs['flat/recommended'],
+    ...ruleHash.jest,
 
     rules: {
-      ...jestPlugin.configs['flat/recommended'].rules,
+      ...ruleHash.jest.rules,
 
       'jest/consistent-test-it': [
         'error',
@@ -1767,9 +1770,12 @@ export default [
   },
   {
     plugins: {
-      jsdoc: jsdocPlugin,
+      ...ruleHash.jsdoc.plugins,
     },
+
     rules: {
+      ...ruleHash.jsdoc.rules,
+
       'jsdoc/check-access': [
         'error',
       ],
