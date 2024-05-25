@@ -1405,7 +1405,7 @@ export default [
         'first',
       ],
       'sort-imports': [
-        'error',
+        'off',
         {
           ignoreCase: false,
           ignoreDeclarationSort: false,
