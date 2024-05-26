@@ -21,6 +21,8 @@
     "oneline",
     "parens",
     "plusplus",
+    "ruleset",
+    "rulesets",
     "wizaction",
 
     "noalias",
