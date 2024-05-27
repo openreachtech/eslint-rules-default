@@ -11,6 +11,11 @@
       "default": "./index.js"
     }
   },
+  "files": [
+    "index.js",
+    "index.mjs",
+    "rules/"
+  ],
   "scripts": {
     "l": "npm run lint",
     "lint": "eslint .",
