@@ -1,15 +1,20 @@
 'use strict'
 
-const core = require('../../rules/core')
-const disableCoreStylistic = require('../../rules/disable-core-stylistic')
-const stylisticJs = require('../../rules/plugins/stylistic/js')
-const stylisticPlus = require('../../rules/plugins/stylistic/plus')
-const jestPlugin = require('../../rules/plugins/jest')
-const jsdocPlugin = require('../../rules/plugins/jsdoc')
+const core = require('../../rules/core.js')
+const disableCoreStylistic = require('../../rules/disable-core-stylistic.js')
+const stylisticJs = require('../../rules/plugins/stylistic/js.js')
+const stylisticPlus = require('../../rules/plugins/stylistic/plus.js')
+const jestPlugin = require('../../rules/plugins/jest.js')
+const jsdocPlugin = require('../../rules/plugins/jsdoc.js')
 
-const mainExports = require('../../index')
+describe('dual entry points', () => {
+  test('to exist', async () => {
+    const { default: dualEntryPoints } = await import('../../index.mjs')
 
-describe('main exports', () => {
+    expect(dualEntryPoints)
+      .toBeTruthy()
+  })
+
   describe('to have property', () => {
     const cases = [
       {
@@ -50,8 +55,10 @@ describe('main exports', () => {
       },
     ]
 
-    test.each(cases)('property: $args.propertyName', ({ args }) => {
-      expect(mainExports)
+    test.each(cases)('property: $args.propertyName', async ({ args }) => {
+      const { default: dualEntryPoints } = await import('../../index.mjs')
+
+      expect(dualEntryPoints)
         .toHaveProperty(
           args.propertyName,
           args.ruleSet

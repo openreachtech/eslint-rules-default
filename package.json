@@ -3,12 +3,20 @@
   "version": "0.0.0",
   "description": "A showcasing package all the rules of ESLint.",
   "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js",
+      "node": "./index.js",
+      "default": "./index.js"
+    }
+  },
   "scripts": {
     "l": "npm run lint",
     "lint": "eslint .",
     "test": "export NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\"; jest --forceExit --maxWorkers=5"
   },
-  "type": "module",
+  "type": "commonjs",
   "keywords": [
     "ESLint"
   ],
