@@ -1,11 +1,13 @@
-import core from './rules/core.js'
-import disableCoreStylistic from './rules/disable-core-stylistic.js'
-import stylisticJs from './rules/plugins/stylistic/js.js'
-import stylisticPlus from './rules/plugins/stylistic/plus.js'
-import jestPlugin from './rules/plugins/jest.js'
-import jsdocPlugin from './rules/plugins/jsdoc.js'
+'use strict'
 
-export default {
+const core = require('./rules/core.js')
+const disableCoreStylistic = require('./rules/disable-core-stylistic.js')
+const stylisticJs = require('./rules/plugins/stylistic/js.js')
+const stylisticPlus = require('./rules/plugins/stylistic/plus.js')
+const jestPlugin = require('./rules/plugins/jest.js')
+const jsdocPlugin = require('./rules/plugins/jsdoc.js')
+
+module.exports = {
   core,
   disableCoreStylistic,
   stylisticJs,
