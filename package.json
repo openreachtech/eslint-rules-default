@@ -1,22 +1,39 @@
 {
   "name": "@openreachtech/eslint-rules-default",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A showcasing package all the rules of ESLint.",
   "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js",
+      "node": "./index.js",
+      "default": "./index.js"
+    }
+  },
+  "files": [
+    "index.js",
+    "index.mjs",
+    "rules/"
+  ],
   "scripts": {
     "l": "npm run lint",
     "lint": "eslint .",
     "test": "export NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\"; jest --forceExit --maxWorkers=5"
   },
-  "type": "module",
+  "type": "commonjs",
   "keywords": [
     "ESLint"
   ],
   "author": "Open Reach Tech inc.",
-  "license": "UNLICENSED",
+  "license": "MIT",
+  "dependencies": {
+    "@eslint/js": "^9.3.0",
+    "@stylistic/eslint-plugin": "^2.1.0"
+  },
   "devDependencies": {
     "@types/jest": "^29.5.12",
-    "eslint": "^9.2.0",
+    "eslint": "^9.3.0",
     "eslint-plugin-jest": "^28.5.0",
     "eslint-plugin-jsdoc": "^48.2.3",
     "eslint-plugin-openreachtech": "^1.0.1",

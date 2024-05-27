@@ -1,13 +1,15 @@
-import jestPlugin from 'eslint-plugin-jest'
-import jsdocPlugin from 'eslint-plugin-jsdoc'
-import openreachtechPlugin from 'eslint-plugin-openreachtech'
+'use strict'
+
+const openreachtechPlugin = require('eslint-plugin-openreachtech')
+
+const ruleHash = require('./index')
 
 /**
  * ESLint Config
  *
  * @type {Array<import('eslint').Linter.FlatConfig>}
  */
-export default [
+module.exports = [
   {
     languageOptions: {
       globals: {
@@ -16,7 +18,7 @@ export default [
       parserOptions: {
         ecmaVersion: 'latest',
       },
-      sourceType: 'module',
+      sourceType: 'commonjs',
     },
   },
 
@@ -28,11 +30,15 @@ export default [
   {
     ignores: [
       '**/node_modules/**',
+      'index.mjs',
     ],
   },
 
   {
     rules: {
+      ...ruleHash.core.rules,
+      ...ruleHash.disableCoreStylistic.rules,
+
       indent: [
         'error',
         2,
@@ -1405,7 +1411,7 @@ export default [
         'first',
       ],
       'sort-imports': [
-        'error',
+        'off',
         {
           ignoreCase: false,
           ignoreDeclarationSort: false,
@@ -1555,10 +1561,10 @@ export default [
     },
   },
   {
-    ...jestPlugin.configs['flat/recommended'],
+    ...ruleHash.jest,
 
     rules: {
-      ...jestPlugin.configs['flat/recommended'].rules,
+      ...ruleHash.jest.rules,
 
       'jest/consistent-test-it': [
         'error',
@@ -1767,9 +1773,12 @@ export default [
   },
   {
     plugins: {
-      jsdoc: jsdocPlugin,
+      ...ruleHash.jsdoc.plugins,
     },
+
     rules: {
+      ...ruleHash.jsdoc.rules,
+
       'jsdoc/check-access': [
         'error',
       ],
