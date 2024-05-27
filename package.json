@@ -8,7 +8,7 @@
     "lint": "eslint .",
     "test": "export NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\"; jest --forceExit --maxWorkers=5"
   },
-  "type": "module",
+  "type": "commonjs",
   "keywords": [
     "ESLint"
   ],
