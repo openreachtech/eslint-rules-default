@@ -6,7 +6,7 @@
   "scripts": {
     "l": "npm run lint",
     "lint": "eslint .",
-    "test": "export NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\"; jest --forceExit --maxWorkers=5"
+    "test": "jest --forceExit --maxWorkers=5"
   },
   "type": "commonjs",
   "keywords": [
