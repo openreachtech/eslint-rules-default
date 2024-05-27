@@ -1,6 +1,8 @@
-import js from '@eslint/js'
+'use strict'
 
-export default {
+const js = require('@eslint/js')
+
+module.exports = {
   rules: {
     ...js.configs
       .all
