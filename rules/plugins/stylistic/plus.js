@@ -1,6 +1,8 @@
-import stylistic from '@stylistic/eslint-plugin-plus'
+'use strict'
 
-export default {
+const stylistic = require('@stylistic/eslint-plugin-plus')
+
+module.exports = {
   plugins: {
     '@stylistic': stylistic,
   },
