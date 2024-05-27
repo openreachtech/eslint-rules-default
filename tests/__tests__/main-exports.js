@@ -1,11 +1,13 @@
-import core from '../../rules/core'
-import disableCoreStylistic from '../../rules/disable-core-stylistic'
-import stylisticJs from '../../rules/plugins/stylistic/js'
-import stylisticPlus from '../../rules/plugins/stylistic/plus'
-import jestPlugin from '../../rules/plugins/jest'
-import jsdocPlugin from '../../rules/plugins/jsdoc'
+'use strict'
 
-import mainExports from '../../index'
+const core = require('../../rules/core')
+const disableCoreStylistic = require('../../rules/disable-core-stylistic')
+const stylisticJs = require('../../rules/plugins/stylistic/js')
+const stylisticPlus = require('../../rules/plugins/stylistic/plus')
+const jestPlugin = require('../../rules/plugins/jest')
+const jsdocPlugin = require('../../rules/plugins/jsdoc')
+
+const mainExports = require('../../index')
 
 describe('main exports', () => {
   describe('to have property', () => {
