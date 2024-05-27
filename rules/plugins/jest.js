@@ -1,8 +1,10 @@
-import jestPlugin from 'eslint-plugin-jest'
+'use strict'
+
+const jestPlugin = require('eslint-plugin-jest')
 
 const jestFlatConfigRecommended = jestPlugin.configs['flat/recommended']
 
-export default {
+module.exports = {
   ...jestFlatConfigRecommended,
 
   rules: {

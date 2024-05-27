@@ -1,6 +1,8 @@
-import stylisticJs from '@stylistic/eslint-plugin-js'
+'use strict'
 
-export default {
+const stylisticJs = require('@stylistic/eslint-plugin-js')
+
+module.exports = {
   plugins: {
     '@stylistic': stylisticJs,
   },
