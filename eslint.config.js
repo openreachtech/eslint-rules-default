@@ -1,13 +1,15 @@
-import openreachtechPlugin from 'eslint-plugin-openreachtech'
+'use strict'
 
-import ruleHash from './index.js'
+const openreachtechPlugin = require('eslint-plugin-openreachtech')
+
+const ruleHash = require('./index')
 
 /**
  * ESLint Config
  *
  * @type {Array<import('eslint').Linter.FlatConfig>}
  */
-export default [
+module.exports = [
   {
     languageOptions: {
       globals: {
@@ -16,7 +18,7 @@ export default [
       parserOptions: {
         ecmaVersion: 'latest',
       },
-      sourceType: 'module',
+      sourceType: 'commonjs',
     },
   },
 
