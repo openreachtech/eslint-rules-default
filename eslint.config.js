@@ -30,6 +30,7 @@ module.exports = [
   {
     ignores: [
       '**/node_modules/**',
+      'index.mjs',
     ],
   },
 
