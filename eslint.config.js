@@ -1,6 +1,7 @@
 'use strict'
 
 const jestPlugin = require('eslint-plugin-jest')
+const jsdocPlugin = require('eslint-plugin-jsdoc')
 const openreachtechPlugin = require('eslint-plugin-openreachtech')
 
 const ruleHash = require('./index')
@@ -1776,12 +1777,10 @@ module.exports = [
   },
   {
     plugins: {
-      ...ruleHash.jsdoc.plugins,
+      jsdoc: jsdocPlugin,
     },
 
     rules: {
-      ...ruleHash.jsdoc.rules,
-
       'jsdoc/check-access': [
         'error',
       ],

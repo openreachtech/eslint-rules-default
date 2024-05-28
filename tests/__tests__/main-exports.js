@@ -4,7 +4,6 @@ const core = require('../../rules/core')
 const disableCoreStylistic = require('../../rules/disable-core-stylistic')
 const stylisticJs = require('../../rules/plugins/stylistic/js')
 const stylisticPlus = require('../../rules/plugins/stylistic/plus')
-const jsdocPlugin = require('../../rules/plugins/jsdoc')
 
 const mainExports = require('../../index')
 
@@ -33,12 +32,6 @@ describe('main exports', () => {
         args: {
           propertyName: 'stylisticPlus',
           ruleSet: stylisticPlus,
-        },
-      },
-      {
-        args: {
-          propertyName: 'jsdoc',
-          ruleSet: jsdocPlugin,
         },
       },
     ]
