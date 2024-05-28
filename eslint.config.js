@@ -1,8 +1,11 @@
 'use strict'
 
+const jestPlugin = require('eslint-plugin-jest')
 const openreachtechPlugin = require('eslint-plugin-openreachtech')
 
 const ruleHash = require('./index')
+
+const jestFlatConfigRecommended = jestPlugin.configs['flat/recommended']
 
 /**
  * ESLint Config
@@ -1561,10 +1564,10 @@ module.exports = [
     },
   },
   {
-    ...ruleHash.jest,
+    ...jestFlatConfigRecommended,
 
     rules: {
-      ...ruleHash.jest.rules,
+      ...jestFlatConfigRecommended.rules,
 
       'jest/consistent-test-it': [
         'error',
