@@ -69,7 +69,7 @@ export default [
       ...
     },
   },
-];
+]
 ```
 
 #### Advanced Configuration
@@ -133,7 +133,7 @@ export default [
       ...
     ],
   },
-];
+]
 ```
 
 ## Track of Changes with Line Comments
@@ -172,7 +172,7 @@ export default [
       ...
     },
   },
-];
+]
 ```
 
 ## License
