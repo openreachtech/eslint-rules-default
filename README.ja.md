@@ -193,6 +193,7 @@ GitHub Issues または Pull Request を通じてお気軽にご提案くださ�
 % git clone https://github.com/openreachtech/eslint-rules-default.git
 % cd eslint-rules-default
 % npm install
+% npm run lint
 % npm test
 ```
 

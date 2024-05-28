@@ -195,6 +195,7 @@ We strive to meet user expectations and your contributions are highly appreciate
 % git clone https://github.com/openreachtech/eslint-rules-default.git
 % cd eslint-rules-default
 % npm install
+% npm run lint
 % npm test
 ```
 
