@@ -4,7 +4,6 @@ const core = require('../../rules/core.js')
 const disableCoreStylistic = require('../../rules/disable-core-stylistic.js')
 const stylisticJs = require('../../rules/plugins/stylistic/js.js')
 const stylisticPlus = require('../../rules/plugins/stylistic/plus.js')
-const jsdocPlugin = require('../../rules/plugins/jsdoc.js')
 
 describe('dual entry points', () => {
   test('to exist', async () => {
@@ -38,12 +37,6 @@ describe('dual entry points', () => {
         args: {
           propertyName: 'stylisticPlus',
           ruleSet: stylisticPlus,
-        },
-      },
-      {
-        args: {
-          propertyName: 'jsdoc',
-          ruleSet: jsdocPlugin,
         },
       },
     ]
