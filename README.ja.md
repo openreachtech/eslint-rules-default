@@ -106,7 +106,7 @@ export default [
   {
     rules: {
       ...ruleHash.core.rules,
-      ...ruleHash.disableCoreStylistic.rules,
+      ...ruleHash.disableCoreStylistic.rules, // <--- ✅
 
       indent: [
         'error',
