@@ -74,11 +74,9 @@ export default [
 
 #### Advanced Configuration
 
-此のパッケージには、幾つかのプラグインのルールセットも含まれています。
+此のパッケージには、stylistic plugin のルールセットも含まれています。
 
-1. [@stylistic/eslint-plugin](https://www.npmjs.com/package/@stylistic/eslint-plugin)
-2. [ESLint Jest plugin](https://www.npmjs.com/package/eslint-plugin-jest)
-3. [ESLint JSDoc plugin](https://www.npmjs.com/package/eslint-plugin-jsdoc)
+* [@stylistic/eslint-plugin](https://www.npmjs.com/package/@stylistic/eslint-plugin)
 
 `@stylistic/eslint-plugin` のルールセットで、現在のバージョンでは以下が含まれています。
 
