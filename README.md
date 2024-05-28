@@ -70,16 +70,14 @@ export default [
       ...
     },
   },
-];
+]
 ```
 
 #### Advanced Configuration
 
-This package also contains several rulesets for several plugin.
+This package also contains stylistic plugin ruleset.
 
-1. [@stylistic/eslint-plugin](https://www.npmjs.com/package/@stylistic/eslint-plugin)
-2. [ESLint Jest plugin](https://www.npmjs.com/package/eslint-plugin-jest)
-3. [ESLint JSDoc plugin](https://www.npmjs.com/package/eslint-plugin-jsdoc)
+* [@stylistic/eslint-plugin](https://www.npmjs.com/package/@stylistic/eslint-plugin)
 
 `@stylistic/eslint-plugin` rulesets included in this version are:
 
@@ -108,7 +106,7 @@ export default [
   {
     rules: {
       ...ruleHash.core.rules,
-      ...ruleHash.disableCoreStylistic.rules,
+      ...ruleHash.disableCoreStylistic.rules, // <--- ✅
 
       indent: [
         'error',
@@ -135,7 +133,7 @@ export default [
       ...
     ],
   },
-];
+]
 ```
 
 ## Track of Changes with Line Comments
@@ -174,7 +172,7 @@ export default [
       ...
     },
   },
-];
+]
 ```
 
 ## License
@@ -195,6 +193,7 @@ We strive to meet user expectations and your contributions are highly appreciate
 % git clone https://github.com/openreachtech/eslint-rules-default.git
 % cd eslint-rules-default
 % npm install
+% npm run lint
 % npm test
 ```
 
