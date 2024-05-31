@@ -812,7 +812,7 @@ module.exports = {
           'xxx',
         ],
         location: 'start',
-        decoration: [],
+        decoration: undefined, // When disable `decoration` field, give undefined instead of empty array
       },
     ],
     'object-shorthand': [
