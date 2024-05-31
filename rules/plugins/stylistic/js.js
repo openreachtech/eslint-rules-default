@@ -435,9 +435,15 @@ module.exports = {
     '@stylistic/semi': [
       'error',
       'always',
+      // When 2nd item of options is 'always', used below object as 3rd item.
       {
-        beforeStatementContinuationChars: 'any',
+        omitLastInOneLineBlock: true,
+        omitLastInOneLineClassBody: true,
       },
+      // When 2nd item of options is 'never', used below object as 3rd item.
+      // {
+      //   beforeStatementContinuationChars: 'any',
+      // },
     ],
     '@stylistic/semi-spacing': [
       'error',
