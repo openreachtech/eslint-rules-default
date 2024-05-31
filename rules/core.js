@@ -799,9 +799,6 @@ module.exports = {
         allowAsStatement: false,
       },
     ],
-    'no-with': [
-      'error',
-    ],
     'one-var': [
       'error',
       'always',
@@ -817,6 +814,9 @@ module.exports = {
         location: 'start',
         decoration: undefined, // When disable `decoration` field, give undefined instead of empty array
       },
+    ],
+    'no-with': [
+      'error',
     ],
     'object-shorthand': [
       'error',
