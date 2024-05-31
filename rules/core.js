@@ -135,6 +135,8 @@ module.exports = {
     ],
     'id-denylist': [
       'error',
+      // There are 0 or more rest parameters in the array
+      // string
     ],
     'id-length': [
       'error',
