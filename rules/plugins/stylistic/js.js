@@ -408,6 +408,8 @@ module.exports = {
     ],
     '@stylistic/padding-line-between-statements': [
       'error',
+      // There are 0 or more rest parameters in the array
+      // { blankLine: string, prev: string, next: string }
     ],
     '@stylistic/quote-props': [
       'error',
