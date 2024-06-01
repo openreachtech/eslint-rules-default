@@ -47,23 +47,19 @@ export default [
       ...ruleHash.core.rules,
       ...ruleHash.disableCoreStylistic.rules, // Not required after v10.
 
-      indent: [
+      'array-callback-return': [
         'error',
-        2, // 4
-      ],
-      quotes: [
-        'error',
-        'single', // 'double'
         {
-          avoidEscape: true,
-          allowTemplateLiterals: false,
+          allowImplicit: false,
+          checkForEach: true, // false
         },
       ],
-      semi: [
+
+      'max-classes-per-file': [
         'error',
-        'never', // 'always'
         {
-          beforeStatementContinuationChars: 'never', // 'any'
+          max: 1,
+          ignoreExpressions: true, // false
         },
       ],
 
@@ -109,9 +105,12 @@ export default [
       ...ruleHash.core.rules,
       ...ruleHash.disableCoreStylistic.rules, // <--- ✅
 
-      indent: [
+      'array-callback-return': [
         'error',
-        2, // 4
+        {
+          allowImplicit: false,
+          checkForEach: true, // false
+        },
       ],
 
       ...
@@ -151,25 +150,30 @@ export default [
       ...ruleHash.core.rules,
       ...ruleHash.disableCoreStylistic.rules,
 
-      indent: [
+      'array-callback-return': [
         'error',
-        2, // 4 <--- ✅
-      ],
-      quotes: [
-        'error',
-        'single', // 'double' <--- ✅
         {
-          avoidEscape: true,
-          allowTemplateLiterals: false,
+          allowImplicit: false,
+          checkForEach: true, // false <--- ✅
         },
       ],
-      semi: [
-        'error',
-        'never', // 'always' <--- ✅
+
+      'dot-notation': [
+        'off', // 'error' <--- ✅
         {
-          beforeStatementContinuationChars: 'never', // 'any' <--- ✅
+          allowKeywords: true,
+          allowPattern: '',
         },
       ],
+
+      'max-classes-per-file': [
+        'error',
+        {
+          max: 1,
+          ignoreExpressions: true, // false <--- ✅
+        },
+      ],
+
       ...
     },
   },
