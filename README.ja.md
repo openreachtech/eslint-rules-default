@@ -82,6 +82,7 @@ export default [
 
 | ルールセット | 含む |
 |--|:--:|
+| eslint-plugin | ✅ |
 | eslint-plugin-js | ✅ |
 | eslint-plugin-ts | ❌ |
 | eslint-plugin-jsx | ❌ |
