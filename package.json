@@ -15,7 +15,7 @@
     "index.js",
     "index.mjs",
     "README.ja.md",
-    "rules/",
+    "configurations/",
     "types/"
   ],
   "scripts": {
