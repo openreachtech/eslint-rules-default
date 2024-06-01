@@ -119,11 +119,10 @@ export default [
 
   // @stylistic rules
   {
-    ...ruleHash.stylisticJs,
+    ...ruleHash.stylistic,
 
     rules: [
-      ...ruleHash.stylisticJs.rules,
-      ...ruleHash.stylisticPlus.rules,
+      ...ruleHash.stylistic.rules,
 
       '@stylistic/indent-binary-ops': [
         'error',
