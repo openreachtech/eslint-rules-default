@@ -752,6 +752,9 @@ module.exports = {
         allowNamedExports: false,
       },
     ],
+    'no-useless-assignment': [
+      'error',
+    ],
     'no-useless-backreference': [
       'error',
     ],
