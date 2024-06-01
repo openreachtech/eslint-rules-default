@@ -38,13 +38,13 @@ npm install --save-dev \
 
 ```js
 // eslint.config.js
-import ruleHash from '@openreachtech/eslint-rules-default'
+import configurationHash from '@openreachtech/eslint-rules-default'
 
 export default [
   {
     rules: {
-      ...ruleHash.core.rules,
-      ...ruleHash.disableCoreStylistic.rules, // Not required after v10.
+      ...configurationHash.core.rules,
+      ...configurationHash.disableCoreStylistic.rules, // Not required after v10.
 
       'array-callback-return': [
         'error',
@@ -84,7 +84,7 @@ export default [
 | eslint-plugin-jsx | ❌ |
 | eslint-plugin-plus | ✅ |
 
-`ruleHash.stylisticTs` と `ruleHash.stylisticJsx` は、ニーズが多ければ将来追加されます。
+`configurationHash.stylisticTs` と `configurationHash.stylisticJsx` は、ニーズが多ければ将来追加されます。
 
 #### Frequently-Disabled Rules
 
@@ -94,14 +94,14 @@ ESLint v9 で `@stylistic/eslint-plugin` を使う場合は、以下の様にし
 
 ```js
 // eslint.config.js
-import ruleHash from '@openreachtech/eslint-rules-default'
+import configurationHash from '@openreachtech/eslint-rules-default'
 
 export default [
   // core rules
   {
     rules: {
-      ...ruleHash.core.rules,
-      ...ruleHash.disableCoreStylistic.rules, // <--- ✅
+      ...configurationHash.core.rules,
+      ...configurationHash.disableCoreStylistic.rules, // <--- ✅
 
       'array-callback-return': [
         'error',
@@ -117,10 +117,10 @@ export default [
 
   // @stylistic rules
   {
-    ...ruleHash.stylistic,
+    ...configurationHash.stylistic,
 
     rules: [
-      ...ruleHash.stylistic.rules,
+      ...configurationHash.stylistic.rules,
 
       '@stylistic/indent-binary-ops': [
         'error',
@@ -139,13 +139,13 @@ export default [
 
 ```js
 // eslint.config.js
-import ruleHash from '@openreachtech/eslint-rules-default'
+import configurationHash from '@openreachtech/eslint-rules-default'
 
 export default [
   {
     rules: {
-      ...ruleHash.core.rules,
-      ...ruleHash.disableCoreStylistic.rules,
+      ...configurationHash.core.rules,
+      ...configurationHash.disableCoreStylistic.rules,
 
       'array-callback-return': [
         'error',
