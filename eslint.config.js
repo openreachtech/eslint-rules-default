@@ -4,7 +4,7 @@ const jestPlugin = require('eslint-plugin-jest')
 const jsdocPlugin = require('eslint-plugin-jsdoc')
 const openreachtechPlugin = require('eslint-plugin-openreachtech')
 
-const ruleHash = require('./index')
+const configurationHash = require('./index')
 
 const jestFlatConfigRecommended = jestPlugin.configs['flat/recommended']
 
@@ -40,8 +40,8 @@ module.exports = [
 
   {
     rules: {
-      ...ruleHash.core.rules,
-      ...ruleHash.disableCoreStylistic.rules,
+      ...configurationHash.core.rules,
+      ...configurationHash.disableCoreStylistic.rules,
 
       indent: [
         'error',
