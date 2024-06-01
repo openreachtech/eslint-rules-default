@@ -2,8 +2,8 @@
 
 const core = require('../../rules/core')
 const disableCoreStylistic = require('../../rules/disable-core-stylistic')
-const stylisticJs = require('../../rules/plugins/stylistic/js')
-const stylisticPlus = require('../../rules/plugins/stylistic/plus')
+const stylisticJs = require('../../rules/stylistic/js')
+const stylisticPlus = require('../../rules/stylistic/plus')
 
 const mainExports = require('../../index')
 
