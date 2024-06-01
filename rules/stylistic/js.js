@@ -4,17 +4,17 @@ const stylisticJs = require('@stylistic/eslint-plugin-js')
 
 module.exports = {
   plugins: {
-    '@stylistic': stylisticJs,
+    '@stylistic/js': stylisticJs,
   },
   rules: {
-    '@stylistic/array-bracket-newline': [
+    '@stylistic/js/array-bracket-newline': [
       'error',
       {
         multiline: true,
         minItems: null,
       },
     ],
-    '@stylistic/array-bracket-spacing': [
+    '@stylistic/js/array-bracket-spacing': [
       'error',
       'never',
       {
@@ -23,7 +23,7 @@ module.exports = {
         singleValue: false,
       },
     ],
-    '@stylistic/array-element-newline': [
+    '@stylistic/js/array-element-newline': [
       'error',
       'always',
       {
@@ -31,32 +31,32 @@ module.exports = {
         minItems: null,
       },
     ],
-    '@stylistic/arrow-parens': [
+    '@stylistic/js/arrow-parens': [
       'error',
       'always',
       {
         requireForBlockBody: false,
       },
     ],
-    '@stylistic/arrow-spacing': [
+    '@stylistic/js/arrow-spacing': [
       'error',
       {
         before: true,
         after: true,
       },
     ],
-    '@stylistic/block-spacing': [
+    '@stylistic/js/block-spacing': [
       'error',
       'always',
     ],
-    '@stylistic/brace-style': [
+    '@stylistic/js/brace-style': [
       'error',
       '1tbs', // = One True Brace Style
       {
         allowSingleLine: false,
       },
     ],
-    '@stylistic/comma-dangle': [
+    '@stylistic/js/comma-dangle': [
       'error',
       {
         arrays: 'never',
@@ -66,56 +66,56 @@ module.exports = {
         functions: 'never',
       },
     ],
-    '@stylistic/comma-spacing': [
+    '@stylistic/js/comma-spacing': [
       'error',
       {
         before: false,
         after: true,
       },
     ],
-    '@stylistic/comma-style': [
+    '@stylistic/js/comma-style': [
       'error',
       'last',
     ],
-    '@stylistic/computed-property-spacing': [
+    '@stylistic/js/computed-property-spacing': [
       'error',
       'never',
       {
         enforceForClassMembers: true,
       },
     ],
-    '@stylistic/dot-location': [
+    '@stylistic/js/dot-location': [
       'error',
       'object',
     ],
-    '@stylistic/eol-last': [
+    '@stylistic/js/eol-last': [
       'error',
       'always',
     ],
-    '@stylistic/function-call-argument-newline': [
+    '@stylistic/js/function-call-argument-newline': [
       'error',
       'always',
     ],
-    '@stylistic/function-call-spacing': [
+    '@stylistic/js/function-call-spacing': [
       'error',
       'never',
     ],
-    '@stylistic/function-paren-newline': [
+    '@stylistic/js/function-paren-newline': [
       'error',
       'multiline',
     ],
-    '@stylistic/generator-star-spacing': [
+    '@stylistic/js/generator-star-spacing': [
       'error',
       {
         before: true,
         after: false,
       },
     ],
-    '@stylistic/implicit-arrow-linebreak': [
+    '@stylistic/js/implicit-arrow-linebreak': [
       'error',
       'beside',
     ],
-    '@stylistic/indent': [
+    '@stylistic/js/indent': [
       'error',
       4,
       {
@@ -146,11 +146,11 @@ module.exports = {
         ignoreComments: false,
       },
     ],
-    '@stylistic/jsx-quotes': [
+    '@stylistic/js/jsx-quotes': [
       'error',
       'prefer-double',
     ],
-    '@stylistic/key-spacing': [
+    '@stylistic/js/key-spacing': [
       'error',
       {
         beforeColon: false,
@@ -158,14 +158,14 @@ module.exports = {
         mode: 'strict',
       },
     ],
-    '@stylistic/keyword-spacing': [
+    '@stylistic/js/keyword-spacing': [
       'error',
       {
         before: true,
         after: true,
       },
     ],
-    '@stylistic/line-comment-position': [
+    '@stylistic/js/line-comment-position': [
       'error',
       {
         position: 'above',
@@ -173,11 +173,11 @@ module.exports = {
         ignorePattern: '',
       },
     ],
-    '@stylistic/linebreak-style': [
+    '@stylistic/js/linebreak-style': [
       'error',
       'unix',
     ],
-    '@stylistic/lines-around-comment': [
+    '@stylistic/js/lines-around-comment': [
       'error',
       {
         beforeBlockComment: true,
@@ -197,52 +197,52 @@ module.exports = {
         afterHashbangComment: false,
       },
     ],
-    '@stylistic/lines-between-class-members': [
+    '@stylistic/js/lines-between-class-members': [
       'error',
       'always',
       {
         exceptAfterSingleLine: false,
       },
     ],
-    '@stylistic/max-len': [
+    '@stylistic/js/max-len': [
       'error',
       {
         code: 80,
         tabWidth: 4,
       },
     ],
-    '@stylistic/max-statements-per-line': [
+    '@stylistic/js/max-statements-per-line': [
       'error',
       {
         max: 1,
       },
     ],
-    '@stylistic/multiline-comment-style': [
+    '@stylistic/js/multiline-comment-style': [
       'error',
       'starred-block',
     ],
-    '@stylistic/multiline-ternary': [
+    '@stylistic/js/multiline-ternary': [
       'error',
       'always',
     ],
-    '@stylistic/new-parens': [
+    '@stylistic/js/new-parens': [
       'error',
       'always',
     ],
-    '@stylistic/newline-per-chained-call': [
+    '@stylistic/js/newline-per-chained-call': [
       'error',
       {
         ignoreChainWithDepth: 2,
       },
     ],
-    '@stylistic/no-confusing-arrow': [
+    '@stylistic/js/no-confusing-arrow': [
       'error',
       {
         allowParens: true,
         onlyOneSimpleParam: false,
       },
     ],
-    '@stylistic/no-extra-parens': [
+    '@stylistic/js/no-extra-parens': [
       'error',
       'all',
       {
@@ -257,13 +257,13 @@ module.exports = {
         allowParensAfterCommentPattern: '',
       },
     ],
-    '@stylistic/no-extra-semi': [
+    '@stylistic/js/no-extra-semi': [
       'error',
     ],
-    '@stylistic/no-floating-decimal': [
+    '@stylistic/js/no-floating-decimal': [
       'error',
     ],
-    '@stylistic/no-mixed-operators': [
+    '@stylistic/js/no-mixed-operators': [
       'error',
       {
         allowSamePrecedence: true,
@@ -306,10 +306,10 @@ module.exports = {
         ],
       },
     ],
-    '@stylistic/no-mixed-spaces-and-tabs': [
+    '@stylistic/js/no-mixed-spaces-and-tabs': [
       'error',
     ],
-    '@stylistic/no-multi-spaces': [
+    '@stylistic/js/no-multi-spaces': [
       'error',
       {
         ignoreEOLComments: false,
@@ -318,7 +318,7 @@ module.exports = {
         },
       },
     ],
-    '@stylistic/no-multiple-empty-lines': [
+    '@stylistic/js/no-multiple-empty-lines': [
       'error',
       {
         max: 2,
@@ -326,30 +326,30 @@ module.exports = {
         maxEOF: 2,
       },
     ],
-    '@stylistic/no-tabs': [
+    '@stylistic/js/no-tabs': [
       'error',
       {
         allowIndentationTabs: false,
       },
     ],
-    '@stylistic/no-trailing-spaces': [
+    '@stylistic/js/no-trailing-spaces': [
       'error',
       {
         skipBlankLines: false,
         ignoreComments: false,
       },
     ],
-    '@stylistic/no-whitespace-before-property': [
+    '@stylistic/js/no-whitespace-before-property': [
       'error',
     ],
-    '@stylistic/nonblock-statement-body-position': [
+    '@stylistic/js/nonblock-statement-body-position': [
       'error',
       'beside',
       {
         overrides: {},
       },
     ],
-    '@stylistic/object-curly-newline': [
+    '@stylistic/js/object-curly-newline': [
       'error',
       {
         ObjectExpression: {
@@ -374,7 +374,7 @@ module.exports = {
         },
       },
     ],
-    '@stylistic/object-curly-spacing': [
+    '@stylistic/js/object-curly-spacing': [
       'error',
       'never',
       {
@@ -382,36 +382,36 @@ module.exports = {
         objectsInObjects: false,
       },
     ],
-    '@stylistic/object-property-newline': [
+    '@stylistic/js/object-property-newline': [
       'error',
       {
         allowAllPropertiesOnSameLine: false,
       },
     ],
-    '@stylistic/one-var-declaration-per-line': [
+    '@stylistic/js/one-var-declaration-per-line': [
       'error',
       'initializations',
     ],
-    '@stylistic/operator-linebreak': [
+    '@stylistic/js/operator-linebreak': [
       'error',
       'after',
       {
         overrides: {},
       },
     ],
-    '@stylistic/padded-blocks': [
+    '@stylistic/js/padded-blocks': [
       'error',
       'always',
       {
         allowSingleLineBlocks: false,
       },
     ],
-    '@stylistic/padding-line-between-statements': [
+    '@stylistic/js/padding-line-between-statements': [
       'error',
       // There are 0 or more rest parameters in the array
       // { blankLine: string, prev: string, next: string }
     ],
-    '@stylistic/quote-props': [
+    '@stylistic/js/quote-props': [
       'error',
       'always',
       {
@@ -420,7 +420,7 @@ module.exports = {
         numbers: false,
       },
     ],
-    '@stylistic/quotes': [
+    '@stylistic/js/quotes': [
       'error',
       'double',
       {
@@ -428,11 +428,11 @@ module.exports = {
         allowTemplateLiterals: false,
       },
     ],
-    '@stylistic/rest-spread-spacing': [
+    '@stylistic/js/rest-spread-spacing': [
       'error',
       'never',
     ],
-    '@stylistic/semi': [
+    '@stylistic/js/semi': [
       'error',
       'always',
       // When 2nd item of options is 'always', used below object as 3rd item.
@@ -445,18 +445,18 @@ module.exports = {
       //   beforeStatementContinuationChars: 'any',
       // },
     ],
-    '@stylistic/semi-spacing': [
+    '@stylistic/js/semi-spacing': [
       'error',
       {
         before: false,
         after: true,
       },
     ],
-    '@stylistic/semi-style': [
+    '@stylistic/js/semi-style': [
       'error',
       'last',
     ],
-    '@stylistic/space-before-blocks': [
+    '@stylistic/js/space-before-blocks': [
       'error',
       {
         functions: 'always',
@@ -464,7 +464,7 @@ module.exports = {
         classes: 'always',
       },
     ],
-    '@stylistic/space-before-function-paren': [
+    '@stylistic/js/space-before-function-paren': [
       'error',
       {
         anonymous: 'always',
@@ -472,17 +472,17 @@ module.exports = {
         asyncArrow: 'always',
       },
     ],
-    '@stylistic/space-in-parens': [
+    '@stylistic/js/space-in-parens': [
       'error',
       'never',
     ],
-    '@stylistic/space-infix-ops': [
+    '@stylistic/js/space-infix-ops': [
       'error',
       {
         int32Hint: false,
       },
     ],
-    '@stylistic/space-unary-ops': [
+    '@stylistic/js/space-unary-ops': [
       'error',
       {
         words: true,
@@ -490,7 +490,7 @@ module.exports = {
         overrides: {},
       },
     ],
-    '@stylistic/spaced-comment': [
+    '@stylistic/js/spaced-comment': [
       'error',
       'always',
       {
@@ -520,32 +520,32 @@ module.exports = {
         exceptions: [],
       },
     ],
-    '@stylistic/switch-colon-spacing': [
+    '@stylistic/js/switch-colon-spacing': [
       'error',
       {
         before: false,
         after: true,
       },
     ],
-    '@stylistic/template-curly-spacing': [
+    '@stylistic/js/template-curly-spacing': [
       'error',
       'never',
     ],
-    '@stylistic/template-tag-spacing': [
+    '@stylistic/js/template-tag-spacing': [
       'error',
       'never',
     ],
-    '@stylistic/wrap-iife': [
+    '@stylistic/js/wrap-iife': [
       'error',
       'outside',
       {
         functionPrototypeMethods: false,
       },
     ],
-    '@stylistic/wrap-regex': [
+    '@stylistic/js/wrap-regex': [
       'error',
     ],
-    '@stylistic/yield-star-spacing': [
+    '@stylistic/js/yield-star-spacing': [
       'error',
       {
         before: false,

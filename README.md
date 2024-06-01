@@ -83,6 +83,7 @@ This package also contains stylistic plugin ruleset.
 
 | ruleset | included |
 |:--|:--:|
+| eslint-plugin | ✅ |
 | eslint-plugin-js | ✅ |
 | eslint-plugin-ts | ❌ |
 | eslint-plugin-jsx | ❌ |
