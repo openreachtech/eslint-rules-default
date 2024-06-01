@@ -85,7 +85,7 @@ This package also contains stylistic plugin ruleset.
 | eslint-plugin-jsx | ❌ |
 | eslint-plugin-plus | ✅ |
 
-`ruleHash.stylistics` and `ruleHash.stylistic Jsx` will be added in the future, if there are many needs.
+`ruleHash.stylisticsTs` and `ruleHash.stylisticJsx` will be added in the future, if there are many needs.
 
 #### Frequently-Disabled Rules
 
