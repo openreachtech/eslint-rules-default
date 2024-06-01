@@ -39,13 +39,13 @@ In your `eslint.config.js` file, import `@openreachtech/eslint-rules-default` an
 
 ```js
 // eslint.config.js
-import ruleHash from '@openreachtech/eslint-rules-default'
+import configurationHash from '@openreachtech/eslint-rules-default'
 
 export default [
   {
     rules: {
-      ...ruleHash.core.rules,
-      ...ruleHash.disableCoreStylistic.rules, // Not required after v10.
+      ...configurationHash.core.rules,
+      ...configurationHash.disableCoreStylistic.rules, // Not required after v10.
 
       'array-callback-return': [
         'error',
@@ -85,7 +85,7 @@ This package also contains stylistic plugin ruleset.
 | eslint-plugin-jsx | ❌ |
 | eslint-plugin-plus | ✅ |
 
-`ruleHash.stylisticsTs` and `ruleHash.stylisticJsx` will be added in the future, if there are many needs.
+`configurationHash.stylisticsTs` and `configurationHash.stylisticJsx` will be added in the future, if there are many needs.
 
 #### Frequently-Disabled Rules
 
@@ -96,14 +96,14 @@ When using `@stylistic/eslint-plugin` with ESLint v9, please disable stylistic-r
 
 ```js
 // eslint.config.js
-import ruleHash from '@openreachtech/eslint-rules-default'
+import configurationHash from '@openreachtech/eslint-rules-default'
 
 export default [
   // core rules
   {
     rules: {
-      ...ruleHash.core.rules,
-      ...ruleHash.disableCoreStylistic.rules, // <--- ✅
+      ...configurationHash.core.rules,
+      ...configurationHash.disableCoreStylistic.rules, // <--- ✅
 
       'array-callback-return': [
         'error',
@@ -119,10 +119,10 @@ export default [
 
   // @stylistic rules
   {
-    ...ruleHash.stylistic,
+    ...configurationHash.stylistic,
 
     rules: [
-      ...ruleHash.stylistic.rules,
+      ...configurationHash.stylistic.rules,
 
       '@stylistic/indent-binary-ops': [
         'error',
@@ -141,13 +141,13 @@ When overwriting default values ​​in each ESLint Config package, we recommen
 
 ```js
 // eslint.config.js
-import ruleHash from '@openreachtech/eslint-rules-default'
+import configurationHash from '@openreachtech/eslint-rules-default'
 
 export default [
   {
     rules: {
-      ...ruleHash.core.rules,
-      ...ruleHash.disableCoreStylistic.rules,
+      ...configurationHash.core.rules,
+      ...configurationHash.disableCoreStylistic.rules,
 
       'array-callback-return': [
         'error',
