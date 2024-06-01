@@ -1,9 +1,9 @@
 'use strict'
 
-const stylisticAll = require('../../../../rules/stylistic/all')
+const stylisticAll = require('../../../../configurations/stylistic/all')
 
-const jsRules = require('../../../../rules/stylistic/default-rules/js')
-const plusRules = require('../../../../rules/stylistic/default-rules/plus')
+const jsRules = require('../../../../configurations/stylistic/default-rules/js')
+const plusRules = require('../../../../configurations/stylistic/default-rules/plus')
 
 describe('stylistic/all', () => {
   describe('to contain default rules of js', () => {

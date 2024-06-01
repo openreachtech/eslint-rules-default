@@ -1,10 +1,10 @@
 'use strict'
 
-const core = require('../../rules/core')
-const disableCoreStylistic = require('../../rules/disable-core-stylistic')
-const stylistic = require('../../rules/stylistic/all')
-const stylisticJs = require('../../rules/stylistic/js')
-const stylisticPlus = require('../../rules/stylistic/plus')
+const core = require('../../configurations/core')
+const disableCoreStylistic = require('../../configurations/disable-core-stylistic')
+const stylistic = require('../../configurations/stylistic/all')
+const stylisticJs = require('../../configurations/stylistic/js')
+const stylisticPlus = require('../../configurations/stylistic/plus')
 
 const mainExports = require('../../index')
 
