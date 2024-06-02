@@ -135,6 +135,8 @@ module.exports = {
     ],
     'id-denylist': [
       'error',
+      // There are 0 or more rest parameters in the array
+      // string
     ],
     'id-length': [
       'error',
@@ -259,7 +261,29 @@ module.exports = {
     'no-console': [
       'error',
       {
-        allow: [],
+        allow: undefined, // When disable `allow` field, give undefined instead of empty array
+        // [
+        //   'assert',
+        //   'clear',
+        //   'Console',
+        //   'count',
+        //   'countReset',
+        //   'debug',
+        //   'dir',
+        //   'dirxml',
+        //   'error',
+        //   'group',
+        //   'groupCollapsed',
+        //   'groupEnd',
+        //   'info',
+        //   'log',
+        //   'table',
+        //   'time',
+        //   'timeEnd',
+        //   'timeLog',
+        //   'trace',
+        //   'warn',
+        // ],
       },
     ],
     'no-const-assign': [
@@ -728,6 +752,9 @@ module.exports = {
         allowNamedExports: false,
       },
     ],
+    'no-useless-assignment': [
+      'error',
+    ],
     'no-useless-backreference': [
       'error',
     ],
@@ -772,9 +799,6 @@ module.exports = {
         allowAsStatement: false,
       },
     ],
-    'no-with': [
-      'error',
-    ],
     'one-var': [
       'error',
       'always',
@@ -788,8 +812,11 @@ module.exports = {
           'xxx',
         ],
         location: 'start',
-        decoration: [],
+        decoration: undefined, // When disable `decoration` field, give undefined instead of empty array
       },
+    ],
+    'no-with': [
+      'error',
     ],
     'object-shorthand': [
       'error',

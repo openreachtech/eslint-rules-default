@@ -39,31 +39,27 @@ In your `eslint.config.js` file, import `@openreachtech/eslint-rules-default` an
 
 ```js
 // eslint.config.js
-import ruleHash from '@openreachtech/eslint-rules-default'
+import configurationHash from '@openreachtech/eslint-rules-default'
 
 export default [
   {
     rules: {
-      ...ruleHash.core.rules,
-      ...ruleHash.disableCoreStylistic.rules, // Not required after v10.
+      ...configurationHash.core.rules,
+      ...configurationHash.disableCoreStylistic.rules, // Not required after v10.
 
-      indent: [
+      'array-callback-return': [
         'error',
-        2, // 4
-      ],
-      quotes: [
-        'error',
-        'single', // 'double'
         {
-          avoidEscape: true,
-          allowTemplateLiterals: false,
+          allowImplicit: false,
+          checkForEach: true, // false
         },
       ],
-      semi: [
+
+      'max-classes-per-file': [
         'error',
-        'never', // 'always'
         {
-          beforeStatementContinuationChars: 'never', // 'any'
+          max: 1,
+          ignoreExpressions: true, // false
         },
       ],
 
@@ -83,12 +79,13 @@ This package also contains stylistic plugin ruleset.
 
 | ruleset | included |
 |:--|:--:|
+| eslint-plugin | ✅ |
 | eslint-plugin-js | ✅ |
 | eslint-plugin-ts | ❌ |
 | eslint-plugin-jsx | ❌ |
 | eslint-plugin-plus | ✅ |
 
-`ruleHash.stylistics` and `ruleHash.stylistic Jsx` will be added in the future, if there are many needs.
+`configurationHash.stylisticsTs` and `configurationHash.stylisticJsx` will be added in the future, if there are many needs.
 
 #### Frequently-Disabled Rules
 
@@ -99,18 +96,21 @@ When using `@stylistic/eslint-plugin` with ESLint v9, please disable stylistic-r
 
 ```js
 // eslint.config.js
-import ruleHash from '@openreachtech/eslint-rules-default'
+import configurationHash from '@openreachtech/eslint-rules-default'
 
 export default [
   // core rules
   {
     rules: {
-      ...ruleHash.core.rules,
-      ...ruleHash.disableCoreStylistic.rules, // <--- ✅
+      ...configurationHash.core.rules,
+      ...configurationHash.disableCoreStylistic.rules, // <--- ✅
 
-      indent: [
+      'array-callback-return': [
         'error',
-        2, // 4
+        {
+          allowImplicit: false,
+          checkForEach: true, // false
+        },
       ],
 
       ...
@@ -119,11 +119,10 @@ export default [
 
   // @stylistic rules
   {
-    ...ruleHash.stylisticJs,
+    ...configurationHash.stylistic,
 
     rules: [
-      ...ruleHash.stylisticJs.rules,
-      ...ruleHash.stylisticPlus.rules,
+      ...configurationHash.stylistic.rules,
 
       '@stylistic/indent-binary-ops': [
         'error',
@@ -142,33 +141,38 @@ When overwriting default values ​​in each ESLint Config package, we recommen
 
 ```js
 // eslint.config.js
-import ruleHash from '@openreachtech/eslint-rules-default'
+import configurationHash from '@openreachtech/eslint-rules-default'
 
 export default [
   {
     rules: {
-      ...ruleHash.core.rules,
-      ...ruleHash.disableCoreStylistic.rules,
+      ...configurationHash.core.rules,
+      ...configurationHash.disableCoreStylistic.rules,
 
-      indent: [
+      'array-callback-return': [
         'error',
-        2, // 4 <--- ✅
-      ],
-      quotes: [
-        'error',
-        'single', // 'double' <--- ✅
         {
-          avoidEscape: true,
-          allowTemplateLiterals: false,
+          allowImplicit: false,
+          checkForEach: true, // false <--- ✅
         },
       ],
-      semi: [
-        'error',
-        'never', // 'always' <--- ✅
+
+      'dot-notation': [
+        'off', // 'error' <--- ✅
         {
-          beforeStatementContinuationChars: 'never', // 'any' <--- ✅
+          allowKeywords: true,
+          allowPattern: '',
         },
       ],
+
+      'max-classes-per-file': [
+        'error',
+        {
+          max: 1,
+          ignoreExpressions: true, // false <--- ✅
+        },
+      ],
+
       ...
     },
   },
