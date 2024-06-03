@@ -3,14 +3,16 @@ import {
 } from 'eslint'
 
 declare module '@openreachtech/eslint-rules-default' {
-  const core: ESLint.ConfigData<ESLint.LintOptions>
-  const disableCoreStylistic: ESLint.ConfigData<ESLint.LintOptions>
-  const stylisticJs: ESLint.ConfigData<ESLint.LintOptions>
-  const stylisticPlus: ESLint.ConfigData<ESLint.LintOptions>
+  const core: ESLint.ConfigData
+  const disableCoreStylistic: ESLint.ConfigData
+  const stylistic: ESLint.ConfigData
+  const stylisticJs: ESLint.ConfigData
+  const stylisticPlus: ESLint.ConfigData
 
   export = {
     core,
     disableCoreStylistic,
+    stylistic,
     stylisticJs,
     stylisticPlus,
   }
