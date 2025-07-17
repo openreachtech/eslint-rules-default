@@ -20,7 +20,7 @@ export default [
       parserOptions: {
         ecmaVersion: 'latest',
       },
-      sourceType: 'commonjs',
+      sourceType: 'module',
     },
   },
 

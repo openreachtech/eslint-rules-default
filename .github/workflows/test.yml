@@ -31,8 +31,8 @@ jobs:
       - name: 🔧 setup npm
         run: npm ci
 
-      # - name: 🔬 run lint
-      #   run: npm run lint
+      - name: 🔬 run lint
+        run: npm run lint
 
       # - name: 🧪 run test
       #   run: npm test
