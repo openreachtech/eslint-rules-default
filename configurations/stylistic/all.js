@@ -9,7 +9,7 @@ export default {
   },
 
   rules: {
-    ...stylistic.configs['all-flat'].rules,
+    ...stylistic.configs.all.rules,
 
     ...jsRules,
     ...plusRules,
