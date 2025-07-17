@@ -1,10 +1,8 @@
-'use strict'
+import stylistic from '@stylistic/eslint-plugin'
 
-const stylisticJs = require('@stylistic/eslint-plugin-js')
-
-module.exports = {
+export default {
   plugins: {
-    '@stylistic/js': stylisticJs,
+    '@stylistic/js': stylistic,
   },
   rules: {
     '@stylistic/js/array-bracket-newline': [

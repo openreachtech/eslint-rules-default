@@ -1,9 +1,8 @@
-'use strict'
+import core from '../../configurations/core.js'
+import disableCoreStylistic from '../../configurations/disable-core-stylistic.js'
 
-const core = require('../../configurations/core.js')
-const disableCoreStylistic = require('../../configurations/disable-core-stylistic.js')
-const stylisticJs = require('../../configurations/stylistic/js.js')
-const stylisticPlus = require('../../configurations/stylistic/plus.js')
+import stylisticJs from '../../configurations/stylistic/js.js'
+import stylisticPlus from '../../configurations/stylistic/plus.js'
 
 describe('dual entry points', () => {
   test('to exist', async () => {

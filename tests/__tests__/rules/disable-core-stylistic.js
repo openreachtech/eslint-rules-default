@@ -1,7 +1,5 @@
-'use strict'
-
-const disableCoreStylistic = require('../../../configurations/disable-core-stylistic')
-const stylisticJs = require('../../../configurations/stylistic/js')
+import disableCoreStylistic from '../../../configurations/disable-core-stylistic.js'
+import stylisticJs from '../../../configurations/stylistic/js.js'
 
 describe('disable-core-stylistic rules', () => {
   const cases = [

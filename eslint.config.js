@@ -1,10 +1,8 @@
-'use strict'
+import jestPlugin from 'eslint-plugin-jest'
+import jsdocPlugin from 'eslint-plugin-jsdoc'
+import openreachtechPlugin from 'eslint-plugin-openreachtech'
 
-const jestPlugin = require('eslint-plugin-jest')
-const jsdocPlugin = require('eslint-plugin-jsdoc')
-const openreachtechPlugin = require('eslint-plugin-openreachtech')
-
-const configurationHash = require('./index')
+import configurationHash from './index.js'
 
 const jestFlatConfigRecommended = jestPlugin.configs['flat/recommended']
 
@@ -13,7 +11,7 @@ const jestFlatConfigRecommended = jestPlugin.configs['flat/recommended']
  *
  * @type {Array<import('eslint').Linter.FlatConfig>}
  */
-module.exports = [
+export default [
   {
     languageOptions: {
       globals: {
