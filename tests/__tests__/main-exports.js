@@ -1,5 +1,4 @@
 import core from '../../configurations/core.js'
-import stylisticPlus from '../../configurations/stylistic/plus.js'
 
 import mainExports from '../../index.js'
 
@@ -10,12 +9,6 @@ describe('main exports', () => {
         args: {
           propertyName: 'core',
           ruleSet: core,
-        },
-      },
-      {
-        args: {
-          propertyName: 'stylisticPlus',
-          ruleSet: stylisticPlus,
         },
       },
     ]
