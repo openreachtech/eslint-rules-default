@@ -38,13 +38,15 @@ npm install --save-dev \
 
 ```js
 // eslint.config.js
+import stylistic from '@stylistic/eslint-plugin'
+
 import configurationHash from '@openreachtech/eslint-rules-default'
 
 export default [
   {
     rules: {
       ...configurationHash.core.rules,
-      ...configurationHash.disableCoreStylistic.rules, // Not required after v10.
+      ...stylistic.configs['disable-legacy'].rules, // TODO: Not required after v10.
 
       'array-callback-return': [
         'error',
@@ -74,18 +76,6 @@ export default [
 
 * [@stylistic/eslint-plugin](https://www.npmjs.com/package/@stylistic/eslint-plugin)
 
-`@stylistic/eslint-plugin` のルールセットで、現在のバージョンでは以下が含まれています。
-
-| ルールセット | 含む |
-|--|:--:|
-| eslint-plugin | ✅ |
-| eslint-plugin-js | ✅ |
-| eslint-plugin-ts | ❌ |
-| eslint-plugin-jsx | ❌ |
-| eslint-plugin-plus | ✅ |
-
-`configurationHash.stylisticTs` と `configurationHash.stylisticJsx` は、ニーズが多ければ将来追加されます。
-
 #### Frequently-Disabled Rules
 
 ESLint v9 のコア・ルールセットには、stylistic 関連のルールが含まれています。
@@ -94,6 +84,8 @@ ESLint v9 で `@stylistic/eslint-plugin` を使う場合は、以下の様にし
 
 ```js
 // eslint.config.js
+import stylistic from '@stylistic/eslint-plugin'
+
 import configurationHash from '@openreachtech/eslint-rules-default'
 
 export default [
@@ -101,7 +93,7 @@ export default [
   {
     rules: {
       ...configurationHash.core.rules,
-      ...configurationHash.disableCoreStylistic.rules, // <--- ✅
+      ...stylistic.configs['disable-legacy'].rules, // <--- ✅
 
       'array-callback-return': [
         'error',
@@ -139,13 +131,15 @@ export default [
 
 ```js
 // eslint.config.js
+import stylistic from '@stylistic/eslint-plugin'
+
 import configurationHash from '@openreachtech/eslint-rules-default'
 
 export default [
   {
     rules: {
       ...configurationHash.core.rules,
-      ...configurationHash.disableCoreStylistic.rules,
+      ...stylistic.configs['disable-legacy'].rules,
 
       'array-callback-return': [
         'error',
