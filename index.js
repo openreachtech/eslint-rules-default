@@ -1,15 +1,7 @@
-'use strict'
+import core from './configurations/core.js'
+import stylistic from './configurations/stylistic.js'
 
-const core = require('./configurations/core.js')
-const disableCoreStylistic = require('./configurations/disable-core-stylistic.js')
-const stylistic = require('./configurations/stylistic/all.js')
-const stylisticJs = require('./configurations/stylistic/js.js')
-const stylisticPlus = require('./configurations/stylistic/plus.js')
-
-module.exports = {
+export default {
   core,
-  disableCoreStylistic,
   stylistic,
-  stylisticJs,
-  stylisticPlus,
 }

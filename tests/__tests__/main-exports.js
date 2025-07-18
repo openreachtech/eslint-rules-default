@@ -1,12 +1,7 @@
-'use strict'
+import core from '../../configurations/core.js'
+import stylistic from '../../configurations/stylistic.js'
 
-const core = require('../../configurations/core')
-const disableCoreStylistic = require('../../configurations/disable-core-stylistic')
-const stylistic = require('../../configurations/stylistic/all')
-const stylisticJs = require('../../configurations/stylistic/js')
-const stylisticPlus = require('../../configurations/stylistic/plus')
-
-const mainExports = require('../../index')
+import mainExports from '../../index.js'
 
 describe('main exports', () => {
   describe('to have property', () => {
@@ -19,26 +14,8 @@ describe('main exports', () => {
       },
       {
         args: {
-          propertyName: 'disableCoreStylistic',
-          ruleSet: disableCoreStylistic,
-        },
-      },
-      {
-        args: {
           propertyName: 'stylistic',
           ruleSet: stylistic,
-        },
-      },
-      {
-        args: {
-          propertyName: 'stylisticJs',
-          ruleSet: stylisticJs,
-        },
-      },
-      {
-        args: {
-          propertyName: 'stylisticPlus',
-          ruleSet: stylisticPlus,
         },
       },
     ]

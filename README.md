@@ -39,13 +39,15 @@ In your `eslint.config.js` file, import `@openreachtech/eslint-rules-default` an
 
 ```js
 // eslint.config.js
+import stylistic from '@stylistic/eslint-plugin'
+
 import configurationHash from '@openreachtech/eslint-rules-default'
 
 export default [
   {
     rules: {
       ...configurationHash.core.rules,
-      ...configurationHash.disableCoreStylistic.rules, // Not required after v10.
+      ...stylistic.configs['disable-legacy'].rules, // TODO: Not required after v10.
 
       'array-callback-return': [
         'error',
@@ -75,18 +77,6 @@ This package also contains stylistic plugin ruleset.
 
 * [@stylistic/eslint-plugin](https://www.npmjs.com/package/@stylistic/eslint-plugin)
 
-`@stylistic/eslint-plugin` rulesets included in this version are:
-
-| ruleset | included |
-|:--|:--:|
-| eslint-plugin | ✅ |
-| eslint-plugin-js | ✅ |
-| eslint-plugin-ts | ❌ |
-| eslint-plugin-jsx | ❌ |
-| eslint-plugin-plus | ✅ |
-
-`configurationHash.stylisticsTs` and `configurationHash.stylisticJsx` will be added in the future, if there are many needs.
-
 #### Frequently-Disabled Rules
 
 Core rules of ESLint v9 includes stylistic-related rules.
@@ -96,6 +86,8 @@ When using `@stylistic/eslint-plugin` with ESLint v9, please disable stylistic-r
 
 ```js
 // eslint.config.js
+import stylistic from '@stylistic/eslint-plugin'
+
 import configurationHash from '@openreachtech/eslint-rules-default'
 
 export default [
@@ -103,7 +95,7 @@ export default [
   {
     rules: {
       ...configurationHash.core.rules,
-      ...configurationHash.disableCoreStylistic.rules, // <--- ✅
+      ...stylistic.configs['disable-legacy'].rules, // <--- ✅
 
       'array-callback-return': [
         'error',
@@ -141,13 +133,15 @@ When overwriting default values ​​in each ESLint Config package, we recommen
 
 ```js
 // eslint.config.js
+import stylistic from '@stylistic/eslint-plugin'
+
 import configurationHash from '@openreachtech/eslint-rules-default'
 
 export default [
   {
     rules: {
       ...configurationHash.core.rules,
-      ...configurationHash.disableCoreStylistic.rules,
+      ...stylistic.configs['disable-legacy'].rules,
 
       'array-callback-return': [
         'error',
@@ -203,4 +197,4 @@ We strive to meet user expectations and your contributions are highly appreciate
 
 ## Authors
 
-* [Open Reach Tech inc.](https://openreach.tech)
+* [Open Reach Tech Inc.](https://openreach.tech)

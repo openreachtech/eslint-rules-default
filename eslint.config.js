@@ -1,19 +1,19 @@
-'use strict'
+import stylistic from '@stylistic/eslint-plugin'
 
-const jestPlugin = require('eslint-plugin-jest')
-const jsdocPlugin = require('eslint-plugin-jsdoc')
-const openreachtechPlugin = require('eslint-plugin-openreachtech')
+import jestPlugin from 'eslint-plugin-jest'
+import jsdocPlugin from 'eslint-plugin-jsdoc'
+import openreachtechPlugin from 'eslint-plugin-openreachtech'
 
-const configurationHash = require('./index')
+import configurationHash from './index.js'
 
 const jestFlatConfigRecommended = jestPlugin.configs['flat/recommended']
 
 /**
  * ESLint Config
  *
- * @type {Array<import('eslint').Linter.FlatConfig>}
+ * @type {Array<import('eslint').Linter.Config<*>>} - ESLint configuration
  */
-module.exports = [
+export default [
   {
     languageOptions: {
       globals: {
@@ -22,7 +22,7 @@ module.exports = [
       parserOptions: {
         ecmaVersion: 'latest',
       },
-      sourceType: 'commonjs',
+      sourceType: 'module',
     },
   },
 
@@ -34,14 +34,13 @@ module.exports = [
   {
     ignores: [
       '**/node_modules/**',
-      'index.mjs',
     ],
   },
 
   {
     rules: {
       ...configurationHash.core.rules,
-      ...configurationHash.disableCoreStylistic.rules,
+      ...stylistic.configs['disable-legacy'].rules, // TODO: Not required after v10.
 
       indent: [
         'error',
