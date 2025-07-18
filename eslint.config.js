@@ -1,3 +1,5 @@
+import stylistic from '@stylistic/eslint-plugin'
+
 import jestPlugin from 'eslint-plugin-jest'
 import jsdocPlugin from 'eslint-plugin-jsdoc'
 import openreachtechPlugin from 'eslint-plugin-openreachtech'
@@ -9,7 +11,7 @@ const jestFlatConfigRecommended = jestPlugin.configs['flat/recommended']
 /**
  * ESLint Config
  *
- * @type {Array<import('eslint').Linter.FlatConfig>}
+ * @type {Array<import('eslint').Linter.Config<*>>} - ESLint configuration
  */
 export default [
   {
@@ -39,7 +41,7 @@ export default [
   {
     rules: {
       ...configurationHash.core.rules,
-      ...configurationHash.disableCoreStylistic.rules,
+      ...stylistic.configs['disable-legacy'].rules,
 
       indent: [
         'error',
