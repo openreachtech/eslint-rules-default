@@ -40,7 +40,7 @@ export default [
   {
     rules: {
       ...configurationHash.core.rules,
-      ...stylistic.configs['disable-legacy'].rules,
+      ...stylistic.configs['disable-legacy'].rules, // TODO: Not required after v10.
 
       indent: [
         'error',
