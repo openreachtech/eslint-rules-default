@@ -78,7 +78,7 @@ export default [
         'single',
         {
           avoidEscape: true,
-          allowTemplateLiterals: false,
+          allowTemplateLiterals: 'never',
         },
       ],
       semi: [
