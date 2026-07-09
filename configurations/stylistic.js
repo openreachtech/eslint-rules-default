@@ -430,7 +430,7 @@ export default {
       'double',
       {
         avoidEscape: true,
-        allowTemplateLiterals: false,
+        allowTemplateLiterals: 'never',
       },
     ],
     '@stylistic/rest-spread-spacing': [
