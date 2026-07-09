@@ -78,7 +78,7 @@ export default [
         'single',
         {
           avoidEscape: true,
-          allowTemplateLiterals: 'never',
+          allowTemplateLiterals: false, // FIXME: Correct default value is 'never' by API reference, but it will throw on run `npx eslint .`
         },
       ],
       semi: [
