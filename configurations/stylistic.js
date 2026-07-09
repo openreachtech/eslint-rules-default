@@ -430,7 +430,7 @@ export default {
       'double',
       {
         avoidEscape: true,
-        allowTemplateLiterals: 'never',
+        allowTemplateLiterals: false, // FIXME: Correct default value is 'never' by API reference, but it will throw on run `npx eslint .`
       },
     ],
     '@stylistic/rest-spread-spacing': [
