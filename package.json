@@ -1,6 +1,6 @@
 {
   "name": "@openreachtech/eslint-rules-default",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A showcasing package all the rules of ESLint.",
   "main": "index.js",
   "files": [

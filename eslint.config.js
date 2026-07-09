@@ -78,7 +78,7 @@ export default [
         'single',
         {
           avoidEscape: true,
-          allowTemplateLiterals: false,
+          allowTemplateLiterals: false, // FIXME: Correct default value is 'never' by API reference, but it will throw on run `npx eslint .`
         },
       ],
       semi: [
@@ -925,8 +925,8 @@ export default [
       'no-restricted-syntax': [
         'error',
         {
-          selector: 'CallExpression[callee.property.name=forEach]',
-          message: 'Never use forEach method',
+          selector: 'CallExpression[callee.property.name=forEach]:has(* VariableDeclarator)',
+          message: 'Do not use assignment inside Array#forEach()',
         },
         {
           selector: 'CallExpression[callee.type=MemberExpression][callee.property.name=/^(every|filter|find|findIndex|findLast|findLastIndex|flatMap|forEach|group|groupToMap|map|reduce|reduceRight|some)$/] IfStatement',
