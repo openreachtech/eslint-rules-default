@@ -1,6 +1,6 @@
 {
   "name": "@openreachtech/eslint-rules-default",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A showcasing package all the rules of ESLint.",
   "main": "index.js",
   "files": [
@@ -18,7 +18,7 @@
     "ESLint"
   ],
   "author": "Open Reach Tech Inc.",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "dependencies": {
     "@eslint/js": "^9.31.0",
     "@stylistic/eslint-plugin": "^5.2.0"
