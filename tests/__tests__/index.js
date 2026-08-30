@@ -1,7 +1,7 @@
 import core from '../../configurations/core.js'
 import stylistic from '../../configurations/stylistic.js'
 
-import mainExports from '../../index.js'
+import mainExports from '../../lib/index.js'
 
 describe('main exports', () => {
   describe('to have property', () => {
