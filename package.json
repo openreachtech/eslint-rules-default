@@ -4,7 +4,6 @@
   "description": "A showcasing package all the rules of ESLint.",
   "main": "lib/index.js",
   "files": [
-    "index.js",
     "configurations/",
     "types/"
   ],
