@@ -4,7 +4,7 @@ import jestPlugin from 'eslint-plugin-jest'
 import jsdocPlugin from 'eslint-plugin-jsdoc'
 import openreachtechPlugin from 'eslint-plugin-openreachtech'
 
-import configurationHash from './index.js'
+import configurationHash from './lib/index.js'
 
 const jestFlatConfigRecommended = jestPlugin.configs['flat/recommended']
 
