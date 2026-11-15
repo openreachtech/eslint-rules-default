@@ -55,6 +55,9 @@ jobs:
       - name: 📦 Install packages
         run: npm ci
 
+      - name: 🛡️ npm audit
+        run: npm run audit:npm
+
       - name: 🧵 ESLint
         run: npm run lint
 
