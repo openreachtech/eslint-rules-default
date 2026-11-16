@@ -31,5 +31,9 @@
     "eslint-plugin-jsdoc": "^51.4.1",
     "eslint-plugin-openreachtech": "^1.0.1",
     "jest": "^30.0.4"
+  },
+  "overrides": {
+    "glob": "^14.0.2",
+    "minimatch": "^11.0.1"
   }
 }
