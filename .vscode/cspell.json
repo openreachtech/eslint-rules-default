@@ -3,6 +3,7 @@
     "jsdoc",
     "openreach",
     "openreachtech",
+    "mentsu",
 
     "backreference",
     "camelcase",
@@ -33,5 +34,8 @@
 
     "bject",
     "rray"
+  ],
+  "ignoreWords": [
+    "gcqx"
   ]
 }
